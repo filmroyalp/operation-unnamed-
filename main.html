@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<script>
+    
+    var realuser = 'user';
+    var realpass = 'pass';
+    function myfunction() {
+        var username = document.getElementById("fname").value;
+        var password = document.getElementById("lname").value;
+        console.log(username);
+        console.log(password)
+        
+        if(username == realuser){
+            
+            if(password == realpass){
+                console.log('it did work!')
+                window.location.href = 'https://open.spotify.com/search/somewhere';
+            }else {
+                console.log('nope')
+            }
+        } else {
+        }///
+        //window.alert('etodd')
+    }
+</script>
+<html>
+    <form>
+        <label for="fname">Username</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Password</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <button onclick="myfunction()" id='btnLogin'>log in</button>
+    </form>
+</html>
